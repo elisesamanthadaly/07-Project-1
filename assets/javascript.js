@@ -16,18 +16,28 @@ $(document).ready(function() {
 
 fetchName();
 fetchDog();
-/*
 
+//Click to get new random name
+$("#btnName").on("click", function() {
+    fetchName();
+})
+
+//Click to get new dog img
 $("#btnImage").on("click", function() {
-
     fetchDog();
 })
 
-*/
-
+//click to get new combo
+$("#newCombo").on("click", function() {
+    fetchName();
+    fetchDog();
+    
+})
 
 
 function fetchName () {
+    textNameEl.empty();
+
     fetch(nameLink)
         .then(function(response) {
             //console.log(response);
@@ -42,6 +52,8 @@ function fetchName () {
 }
 
 function fetchDog() {
+    dogImageEl.empty();
+
     fetch (dogLink)
         .then(function(response) {
             console.log(response);
@@ -51,7 +63,7 @@ function fetchDog() {
             //console.log(data);
             var dogImg = $("<img>");
             dogImg.attr("src", data[0].url);
-            dogImg.width= "200"
+            dogImg.width= "300";
             dogImageEl.append(dogImg);
         })
 }
