@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <h1>This is our title </h1>
-<!-- 
+    <h1> I heard you want Dog</h1>
+    <!-- 
     <div class="flex mb-4">
         <div class="w-1/3 bg-gray-400 h-12"></div>
         <div class="w-1/3 bg-gray-500 h-12"></div>
@@ -21,28 +21,27 @@
     </div> -->
 
     <div id="container" class="flex mb-4">
-        <div>
-            <div id="minicontainer-1" class="w-1/3 bg-gray-400 h12">
-                <div>
-                    <p id="displayName"></p>
-                    <button id="btnName" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        click for new name
-                    </button>
-                </div>
-                <div>
-                    <p id="displayImg"></p>
-                    <button id="btnImage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        click for a new dog
-                    </button>
-                </div>
+        <div id="minicontainer-1" class="w-1/3 bg-gray-400 h12">
+            <div>
+                <p id="displayName">This is a  filler</p>
+                <button id="btnName" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    click for new name
+                </button>
+            </div>
+            <div>
+                <p id="displayImg"></p>
+                <button id="btnImage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    click for a new dog
+                </button>
+            </div>
 
 
             </div>
 
-            <div id="minicontainer-2" class="w-1/3 bg-gray-500 h12">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    click for new combo
-                </button>
+        <div id="minicontainer-2" class="w-1/3 bg-gray-500 h12">
+            <button id="newCombo" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                click for new combo
+            </button>
 
             <button id="btnSave" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 click to save current combo
@@ -50,9 +49,9 @@
 
         </div>
         <div id="minicontainer-3">
-            <p>Favorites</p>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                share
+            <h2>Favorites</h2>
+            <button id="btnClear" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                clear
             </button>
 
         </div>
@@ -65,21 +64,12 @@
                     Next
                 </button>
             </div>
-            <!-- <div>
-                <div class="inline-flex">
-                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
-                        Prev
-                    </button>
-                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
-                        Next
-                    </button>
-                </div>
 
-            </div> -->
+
+            <footer> This goes on the bottom</footer>
         </div>
         <div id="footer">Insert other items here</div>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/javascript.js"></script>
