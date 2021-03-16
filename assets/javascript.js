@@ -1,72 +1,98 @@
 // giphy key : aWmCF38aWZNhbJoi236yO2yuW4smGy9q
 // url "https://api.giphy.com/v1/" 
 
-
-//Suejin's Javascript for the two apis:
-//var containerEl = $("#container")
-
 $(document).ready(function() {
     var textNameEl = $("#displayName");
     var dogImageEl = $("#displayImg");
-
 
     var ApiKey = "774092c9-0b11-4331-9432-a0aac1f1ca4a";
     var dogLink = "https://api.thedogapi.com/v1/images/search" + "?api_key=" + ApiKey;
     var nameLink = "https://namey.muffinlabs.com/name.json?frequency=all";
 
-fetchName();
-fetchDog();
+    var capturedDogName;
+    var capturedDogURL;
+    var favorite = {
+        dogName: "",
+        dogURL: "",
+    };
+    var storedFavorites;
+    var favorites = [];
 
-//Click to get new random name
-$("#btnName").on("click", function() {
-    fetchName();
-})
-
-//Click to get new dog img
-$("#btnImage").on("click", function() {
-    fetchDog();
-})
-
-//click to get new combo
-$("#newCombo").on("click", function() {
     fetchName();
     fetchDog();
+
+    //Click to get new random name
+    $("#btnName").on("click", function() {
+    fetchName();
+    })
+
+    //Click to get new dog img
+    $("#btnImage").on("click", function() {
+        fetchDog();
+    })
+
+    //Click to get new combo
+    $("#newCombo").on("click", function() {
+        fetchName();
+        fetchDog();
+    })
+
+    function fetchName () {
+        textNameEl.empty();
+
+        fetch(nameLink)
+            .then(function(response) {
+                //console.log(response);
+                return response.json();
+            })
+            .then(function(data){
+                //console.log(data);
+                var names = $("<h2>");
+                names.text(data[0])
+                textNameEl.append(names);
+
+                capturedDogName = data[0];//Captures current dogName
+            })
+    }
+
+    function fetchDog() {
+        dogImageEl.empty();
+
+        fetch (dogLink)
+            .then(function(response) {
+                console.log(response);
+                return response.json();
+            })
+            .then(function(data){
+                //console.log(data);
+                var dogImg = $("<img>");
+                dogImg.attr("src", data[0].url);
+                dogImg.width= "300";
+                dogImageEl.append(dogImg);
+
+                capturedDogURL = dogImg.attr("src");//Captures current dogURL
+            })
+    }
     
-})
+    //Click to add current dog name/URL combo to favorites
+    $("#btnSave").click(function() {
+        favorite.dogName = capturedDogName;
+        favorite.dogURL = capturedDogURL;
 
+        storedFavorites = JSON.parse(localStorage.getItem("favorites"));
+    
+        if (storedFavorites !== null) {
+            favorites = storedFavorites;
+        }
 
-function fetchName () {
-    textNameEl.empty();
+        favorites.push(favorite);
 
-    fetch(nameLink)
-        .then(function(response) {
-            //console.log(response);
-            return response.json();
-        })
-        .then(function(data){
-            //console.log(data);
-            var names = $("<h2>");
-            names.text(data[0])
-            textNameEl.append(names);
-        })
-}
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+    });
 
-function fetchDog() {
-    dogImageEl.empty();
-
-    fetch (dogLink)
-        .then(function(response) {
-            console.log(response);
-            return response.json();
-        })
-        .then(function(data){
-            //console.log(data);
-            var dogImg = $("<img>");
-            dogImg.attr("src", data[0].url);
-            dogImg.width= "300";
-            dogImageEl.append(dogImg);
-        })
-}
-
-
+    //Click to clear out favorites list
+    $("#btnClear").click(function() {
+        favorites = [];
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+    });
 })
