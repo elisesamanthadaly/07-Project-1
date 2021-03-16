@@ -8,6 +8,8 @@ display: flex;
 justify-content: center;
 }
 
+#displayImg {}
+
 #minicontainer-2 {
     display: flex;
     justify-content: center;
