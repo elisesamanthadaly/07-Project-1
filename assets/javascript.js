@@ -47,7 +47,7 @@ $(document).ready(function() {
             })
             .then(function(data){
                 //console.log(data);
-                var names = $("<h2>");
+                var names = $("<h4>");
                 names.text(data[0])
                 textNameEl.append(names);
 
