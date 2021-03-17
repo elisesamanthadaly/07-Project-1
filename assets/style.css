@@ -1,7 +1,16 @@
 h1 {
+    background-color: seafoam;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+
+/*
+h1 {
     display: flex;
     justify-content: center;
-    background-color:seafoam
+    background-color: seafoam;
+    font-family: 'Roboto Mono', monospace;
 } 
 
  #container {
@@ -41,4 +50,18 @@ display: flex;
 flex-direction: column;
 justify-content: flex-end;
 align-items: center;
+}
+*/
+
+#minicontainer-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: url('https://i.pinimg.com/originals/7a/1e/c0/7a1ec030b9be33f0d76c0b05f7416ea6.jpg')
 }
