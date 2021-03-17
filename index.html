@@ -17,54 +17,56 @@
 </head>
 
 <body>
-    <h1> I heard you want Doggo</h1>
+    <h1 class="flex justify-center"> I heard you want Doggo</h1>
 
     <!-- Main Container -->
-    <div id="container" class="flex mb-4">
+    <div id="container" class="flex mb-4 mx-20">
 
         <!-- Container for Generating Random Name and Random Dog Image-->
-        <div id="minicontainer-1" class="w-2/5 bg-gray-400 h12">
+        <div id="minicontainer-1" class="flex flex-col justify-end  items-center w-3/5 bg-gray-400 ">
 
             <!-- Name Container -->
-            <div id="aboveDogeBTn">
+            <div id="aboveDogeBTn" class="flex justify-center items-center">
                 <p id="displayName"></p>
-                <button id="btnName" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button id="btnName" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-6 rounded">
                     <i class="fas fa-redo-alt"></i> Name
                 </button>
             </div>
 
             <!-- Dog Image Container -->
-            <div id="dogeBtn">
+            <div id="dogeBtn" class="flex flex-col justify-center items-center">
                 <p id="displayImg"></p>
-                <button id="btnImage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button id="btnImage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-6 rounded">
                     <i class="fas fa-redo-alt"></i> Doggo
                 </button>
             </div>
-        </div>
 
-        <!-- Container for two buttons: new combo and save combo-->
-        <div id="minicontainer-2" class="w-1/5 bg-gray-500 h12">
-            <button id="newCombo" class="w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                <i class="fas fa-redo-alt"></i> New Combo
-            </button>
+            <!-- Container for two buttons: new combo and save combo-->
+            <div id="buttonsDiv" class="flex justify-center bg-gray-500 ">
+                <button id="newCombo" class="w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-6 rounded">
+                    <i class="fas fa-redo-alt"></i> New Combo
+                </button>
 
-            <button id="btnSave" class="w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                <i class="far fa-save"></i> Save Current Combo
-            </button>
+                <button id="btnSave" class="w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-6 rounded">
+                    <i class="far fa-save"></i> Save Current Combo
+                </button>
+
+            </div>
+
 
         </div>
 
         <!-- Container for Favorites Carousel-->
-        <div id="minicontainer-3">
+        <div id="minicontainer-3" class="flex flex-col justify-start items-center m-6">
             <h2 id="favHeader">Favorites</h2>
 
             <!--Previous/Next Buttons-->
             <div>
                 <div class="inline-flex">
-                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 my-6 rounded-l">
                         Prev
                     </button>
-                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 my-6 rounded-r">
                         Next
                     </button>
 
@@ -72,7 +74,7 @@
             </div>
             
             <!-- Clear Favorites Button-->
-            <button id="btnClear" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button id="btnClear" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-6 rounded">
                 <i class="far fa-trash-alt"></i> Clear
             </button>
 
