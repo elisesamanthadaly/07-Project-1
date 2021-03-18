@@ -94,6 +94,7 @@ $(document).ready(function() {
         localStorage.setItem("favorites", JSON.stringify(favorites));
 
         carouselIndex = -1;
+        $("#currentFavName").text("");
         $("#currentFavImage").attr("src", "./assets/images/spinning_doge.png");
     });
 
