@@ -38,7 +38,7 @@ h1 {
     align-items: center;
 }
 
-#displayImg {}
+
 
 #minicontainer-2 {
     display: flex;
@@ -52,6 +52,10 @@ justify-content: flex-end;
 align-items: center;
 }
 */
+
+#displayName {
+    color: white;
+}
 
 #minicontainer-3 {
     display: flex;
