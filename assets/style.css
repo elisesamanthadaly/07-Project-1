@@ -81,3 +81,11 @@ body {
 #footerTag {
     font-size: 30px;
 }
+
+#currentFavImage {
+    display: flex;
+    max-height: 500px;
+    max-width: 600px;
+    height: auto;
+    width: auto;
+}
