@@ -18,6 +18,8 @@ $(document).ready(function() {
     var storedFavorites;
     var favorites = [];
 
+    var carouselIndex = -1;
+
     fetchName();
     fetchDog();
 
@@ -42,11 +44,9 @@ $(document).ready(function() {
 
         fetch(nameLink)
             .then(function(response) {
-                //console.log(response);
                 return response.json();
             })
             .then(function(data){
-                //console.log(data);
                 var names = $("<h4>");
                 names.text(data[0])
                 textNameEl.append(names);
@@ -60,11 +60,9 @@ $(document).ready(function() {
 
         fetch (dogLink)
             .then(function(response) {
-                console.log(response);
                 return response.json();
             })
             .then(function(data){
-                //console.log(data);
                 var dogImg = $("<img>");
                 dogImg.attr("src", data[0].url);
                 dogImg.width= "300";
@@ -94,5 +92,45 @@ $(document).ready(function() {
     $("#btnClear").click(function() {
         favorites = [];
         localStorage.setItem("favorites", JSON.stringify(favorites));
+    });
+
+    // Click to cycle backwards through favorites array
+    $("#btnPrev").click(function() {
+        storedFavorites = JSON.parse(localStorage.getItem("favorites"));
+        if (storedFavorites !== null) {
+            favorites = storedFavorites;
+        }
+
+        if (favorites.length !== 0) {
+            if (carouselIndex > 0) {
+                carouselIndex--;
+            }
+            else if (carouselIndex <= 0) {
+                carouselIndex = (favorites.length - 1);
+            }
+
+            $("#currentFavName").text(favorites[carouselIndex].dogName);
+            $("#currentFavImage").attr("src", favorites[carouselIndex].dogURL);
+        }
+    });
+
+    // Click to cycle forwards through favorites array
+    $("#btnNext").click(function() {
+        storedFavorites = JSON.parse(localStorage.getItem("favorites"));
+        if (storedFavorites !== null) {
+            favorites = storedFavorites;
+        }
+
+        if (favorites.length !== 0) {
+            if (carouselIndex < (favorites.length - 1)) {
+                carouselIndex++;
+            }
+            else if (carouselIndex === (favorites.length - 1)) {
+                carouselIndex = 0;
+            }
+
+            $("#currentFavName").text(favorites[carouselIndex].dogName);
+            $("#currentFavImage").attr("src", favorites[carouselIndex].dogURL);
+        }
     });
 })
