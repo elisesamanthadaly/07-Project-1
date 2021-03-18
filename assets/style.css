@@ -66,6 +66,18 @@ align-items: center;
     font-family: 'Roboto Mono', monospace;
 }
 
+#displayImg {
+    display: flex;
+    max-height: 500px;
+    max-width: 600px;
+    height: auto;
+    width: auto;
+}
+
 body {
     background: url('https://i.pinimg.com/originals/7a/1e/c0/7a1ec030b9be33f0d76c0b05f7416ea6.jpg')
+}
+
+#footerTag {
+    font-size: 30px;
 }
