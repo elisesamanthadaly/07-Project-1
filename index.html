@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I heard you want Doggo</title>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    -->
+        <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Adding Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <!-- Adding Google Font-->
@@ -16,17 +17,20 @@
 </head>
 
 <body>
-    <h1 class="flex justify-center">I heard you want Doggo</h1>
+    <header class="flex justify-center my-6">
+            <h1 class="text-5xl">I heard you want Doggo</h1>
+
+    </header>
 
     <!-- Main Container -->
-    <div id="container" class="flex mb-4 mx-20">
+    <div id="container" class="flex justify-between mb-4 mx-20">
 
         <!-- Container for Generating Random Name and Random Dog Image-->
-        <div id="minicontainer-1" class="flex flex-col justify-end  items-center w-3/5 bg-opacity-100">
+        <div id="minicontainer-1" class="w-4/6 flex flex-col justify-center items-center bg-opacity-100">
 
             <!-- Name Container -->
             <div id="aboveDogeBTn" class="flex justify-center items-center">
-                <div id="displayName"></div>
+                <div id="displayName" class="text-3xl"></div>
                 <button id="btnName" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-6 rounded">
                     <i class="fas fa-redo-alt"></i> Name
                 </button>
@@ -34,7 +38,7 @@
 
             <!-- Dog Image Container -->
             <div id="dogeBtn" class="flex flex-col justify-center items-center">
-                <div id="displayImg"></div>
+                <div id="displayImg" class="rounded-lg shadow-2xl"></div>
                 <button id="btnImage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-6 rounded">
                     <i class="fas fa-redo-alt"></i> Doggo
                 </button>
@@ -54,11 +58,11 @@
         </div>
 
         <!-- Container for Favorites Carousel-->
-        <div id="minicontainer-3" class="flex flex-col justify-center items-start m-6">
-            <h2 id="favHeader">Favorites</h2>
+        <div id="minicontainer-3" class="w-2/6 flex flex-col justify-center items-center m-6">
+            <h2 id="favHeader" class="text-4xl font-extrabold">Favorites</h2>
 
             <!-- Current Favorite Name -->
-            <h4 id="currentFavName"></h4>
+            <h4 id="currentFavName" class="text-3xl"></h4>
 
             <!-- Current Favorite Image -->
             <img id="currentFavImage" src="./assets/images/spinning_doge.png" alt="Favorited dog" width="500" height="500">
