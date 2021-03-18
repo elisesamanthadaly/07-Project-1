@@ -114,7 +114,7 @@ $(document).ready(function() {
         }
     });
 
-    // Click to cycle fowards through favorites array
+    // Click to cycle forwards through favorites array
     $("#btnNext").click(function() {
         storedFavorites = JSON.parse(localStorage.getItem("favorites"));
         if (storedFavorites !== null) {
