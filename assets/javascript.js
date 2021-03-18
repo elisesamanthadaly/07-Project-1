@@ -92,6 +92,9 @@ $(document).ready(function() {
     $("#btnClear").click(function() {
         favorites = [];
         localStorage.setItem("favorites", JSON.stringify(favorites));
+
+        carouselIndex = -1;
+        $("#currentFavImage").attr("src", "./assets/pictures/spinning_doge.png");
     });
 
     // Click to cycle backwards through favorites array
