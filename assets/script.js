@@ -74,6 +74,10 @@ $(document).ready(function() {
     
     //Click to add current dog name/URL combo to favorites
     $("#btnSave").click(function() {
+        if ((favorite.dogName === capturedDogName) && (favorite.dogURL === capturedDogURL)) {
+            return;
+        }
+
         favorite.dogName = capturedDogName;
         favorite.dogURL = capturedDogURL;
 
@@ -92,6 +96,10 @@ $(document).ready(function() {
     $("#btnClear").click(function() {
         favorites = [];
         localStorage.setItem("favorites", JSON.stringify(favorites));
+
+        carouselIndex = -1;
+        $("#currentFavName").text("");
+        $("#currentFavImage").attr("src", "./assets/images/spinning_doge.png");
     });
 
     // Click to cycle backwards through favorites array
