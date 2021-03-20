@@ -1,10 +1,12 @@
 # WantADog
 
-AS A hopeful pet owner or bored web developer<br>
+<code>AS A hopeful pet owner or bored web developer<br>
 I WANT random images of dogs with random names<br>
 So I CAN make a list of possible kinds of dogs <br>
 to adopt and what to name them<br>
-OR BE entertained
+OR BE entertained</code>
+
+---
 
 ## Description
 [WantADog](https://abnertor.github.io/WantADog/) is a library of doggo pictures and random names to help users find the best doggo-doggo name combinations. The user can click through randomly selected names and dog images, as well as retrieve new name-dog combinations. The user can also save name-dog combinations into a favorites carousel. The application runs in the browser and features dynamically updated HTML and CSS powered by Javascript and jQuery. The favorited name-dog combinations are stored in `localStorage` and are accesible upon page refresh. Name data is retrieved by making `fetch()` calls to the [Namey! API](https://namey.muffinlabs.com/) and the dog images are retrieved from [The Dog API](https://thedogapi.com/).
