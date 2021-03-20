@@ -1,10 +1,10 @@
 # WantADog
 
-<code>AS A hopeful pet owner or bored web developer<br>
+AS A hopeful pet owner or bored web developer<br>
 I WANT random images of dogs with random names<br>
 So I CAN make a list of possible kinds of dogs <br>
 to adopt and what to name them<br>
-OR BE entertained</code>
+OR BE entertained<br>
 
 ---
 
