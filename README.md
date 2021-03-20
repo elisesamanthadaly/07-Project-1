@@ -9,19 +9,19 @@ OR BE entertained<br>
 ---
 
 ## Description
-[WantADog](https://abnertor.github.io/WantADog/) is a library of doggo pictures and random names to help users find the best doggo-doggo name combinations. The user can click through randomly selected names and dog images, as well as retrieve new name-dog combinations. The user can also save name-dog combinations into a favorites carousel. The application runs in the browser and features dynamically updated HTML and CSS powered by Javascript and jQuery. The favorited name-dog combinations are stored in `localStorage` and are accesible upon page refresh. Name data is retrieved by making `fetch()` calls to the [Namey! API](https://namey.muffinlabs.com/) and the dog images are retrieved from [The Dog API](https://thedogapi.com/).
+[WantADog](https://abnertor.github.io/WantADog/) is a library of doggo pictures and random names to help users find the best doggo-doggo name combinations. The user can click through randomly generated names and dog images, as well as retrieve new name-dog combinations. The user can also save name-dog combinations into a favorites carousel. The application runs in the browser and features dynamically updated HTML and CSS powered by Javascript and jQuery. The favorited name-dog combinations are stored in `localStorage` and are accesible even after page refresh. Name data is retrieved by making `fetch()` calls to the [Namey! API](https://namey.muffinlabs.com/) and the dog images are retrieved from [The Dog API](https://thedogapi.com/).
 
 <img src="./assets/images/spinning_doge.png" alt="Spinning doge" width="100" height="100">
 
 ### Features
 * When the page loads, a random name and dog image are displayed. The favorites carousel displays a placeholder spinning doge image.
-* When the user clicks the "Name" button a new doggo name a retrieved.
-* When the user clicks the "Doggo" button a new doggo image a retrieved.
+* When the user clicks the "Name" button a new doggo name is retrieved.
+* When the user clicks the "Doggo" button a new doggo image is retrieved.
 * When the user clicks the "New Combo" button a new combination of doggo name and doggo image are retrieved.
 * When the user clicks the "Save Current Combo" button, the current doggo name/image combination  is saved to Favorites and stored as an object in an array in `localStorage`
 * When the user clicks the "Prev" and "Next" buttons, they can click through their favorite dog/name combinations, which are stored in `localStorage`.
-* When the user clicks the "Clear" button to clear previously saved favorites, which clears `localStorage`.
-* Duplicates are prevented by preventing the user from saving the last saved combo when clicked multiple times.
+* When the user clicks the "Clear" button to clear previously saved favorites, `localStorage` is cleared.
+* Saving duplicate favorites of the same dog name-image combination is prevented
 
 ### Future Developments
 * Adding a "share" function so that name-doggo combinations can be downloaded and/or shared with friends and family
@@ -52,7 +52,7 @@ The page has the following appearance and functionality:
 
 <b>Images</b>
 * [Background image](https://longwallpapers.com/doge-wallpaper-high-quality/doge-wallpaper-high-quality-for-desktop-wallpaper/)
-* [Favorites doge gif](https://classical-doge.tumblr.com/)
+* [Spinning doge](https://www.pinterest.com/pin/399694535651645241/)
 * [Doge favicon](https://www.favicon.cc/?action=icon&file_id=671697)
 
 
