@@ -1,33 +1,34 @@
 h1 {
-    background-color: seafoam;
     font-family: 'Roboto Mono', monospace;
     color: white;
 }
 
 
-#displayName {
-    color: white;
+h2 {
+    font-family: 'Roboto Mono', monospace;
 }
+
+h4 {
+
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
 
 #minicontainer-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
     color: white;
-    font-family: 'Roboto Mono', monospace;
 }
 
 #displayImg {
     display: flex;
-    max-height: 500px;
-    max-width: 600px;
-    height: auto;
-    width: auto;
+    max-height: 300px;
+    max-width: 350px;
+    /*height: auto;*/
+   /* width: auto;*/
 }
 
 body {
-    background: url('https://i.pinimg.com/originals/7a/1e/c0/7a1ec030b9be33f0d76c0b05f7416ea6.jpg')
+    background: url("../images/wallpaper_doge.jpg");
 }
 
 #footerTag {
@@ -36,8 +37,16 @@ body {
 
 #currentFavImage {
     display: flex;
-    max-height: 500px;
-    max-width: 600px;
-    height: auto;
+    max-height: 300px;
+    /*max-width: 400px;*/
+    /*height: auto;*/
     width: auto;
+}
+
+/* the buttons show up really big and the images show up really small, can change button positions*/
+
+@media screen and (max-width: 550px) {
+    #container {
+        flex-direction: column;
+    }
 }
