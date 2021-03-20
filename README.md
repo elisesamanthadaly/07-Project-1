@@ -7,33 +7,42 @@
 
 ## Usage
 
-Instructions go here.
+Click the "Name" button to get a new doggo name.
+
+Click the "Doggo" button to get a new doggo image.
+
+Click the "New Combo" button to get a new combination of these.
+
+Click the "Save Current Combo" button to add the current doggo name/image combination to Favorites.
+
+Browse Favorites by clicking the "Prev" and "Next" buttons.
+
+Click the "Clear" button to clear previously saved favorites.
 
 ![Screencast gif of app](./assets/images/screencast.gif)
 
+
 ## Features
 
-* Refresh buttons to fetch new dog imgage or names
-* Save button to save image and name to local localStorage
-* Carousel that cycles forwards or backwards through array
+* Refresh buttons to fetch new dog images or names
+* Save button to save images and names to local storage
+* Carousel that cycles forwards or backwards through local storage array
+
 
 ## Technologies Used
 
 * HTML
 * CSS
-* Tailwind
-* JavaScript
+* [Tailwind](https://tailwindcss.com/)
+* JavaScript/jQuery
 * Google Fonts
-* The Dog API
-* Namey! API
 
 
 ## Credits
 
 <b>APIs</b>
-* [The Dog API](https://thedogapi.com/)
-  - API key: 774092c9-0b11-4331-9432-a0aac1f1ca4a
-* [Namey!](https://namey.muffinlabs.com/)
+* [The Dog API](https://thedogapi.com/): Used to return randomized dog image URLs
+* [Namey!](https://namey.muffinlabs.com/): Used to return random names the from US Census Bureau database 
 
 <b>Images</b>
 * [Background image](https://longwallpapers.com/doge-wallpaper-high-quality/doge-wallpaper-high-quality-for-desktop-wallpaper/)
