@@ -21,7 +21,7 @@ h4 {
 
 #displayImg {
     display: flex;
-    max-height: 300px;
+    max-height: 450px;
     max-width: 350px;
     /*height: auto;*/
    /* width: auto;*/
@@ -37,13 +37,13 @@ body {
 
 #currentFavImage {
     display: flex;
-    max-height: 300px;
+    max-height: 450px;
     /*max-width: 400px;*/
     /*height: auto;*/
     width: auto;
 }
 
-/* the buttons show up really big and the images show up really small, can change button positions*/
+/* the buttons show up really big and the images show up really small, can change button positions */
 
 @media screen and (max-width: 550px) {
     #container {
