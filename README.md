@@ -11,6 +11,22 @@ Instructions go here.
 
 ![Screencast gif of app](./assets/images/screencast.gif)
 
+## Features
+
+* Refresh buttons to fetch new dog imgage or names
+* Save button to save image and name to local localStorage
+* Carousel that cycles forwards or backwards through array
+
+## Technologies Used
+
+* HTML
+* CSS
+* Tailwind
+* JavaScript
+* Google Fonts
+* The Dog API
+* Namey! API
+
 
 ## Credits
 
