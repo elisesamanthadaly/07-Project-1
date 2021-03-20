@@ -23,9 +23,9 @@ h4 {
 #displayImg {
     display: flex;
     max-height: 450px;
-    max-width: 350px;
+    /*max-width: 350px;*/
     /*height: auto;*/
-   /* width: auto;*/
+    width: auto;
 }
 
 body {
