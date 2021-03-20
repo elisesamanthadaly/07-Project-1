@@ -42,7 +42,6 @@ Click the "Clear" button to clear previously saved favorites.
 
 <b>APIs</b>
 * [The Dog API](https://thedogapi.com/): Used to return randomized dog image URLs
-  - API key: 774092c9-0b11-4331-9432-a0aac1f1ca4a
 * [Namey!](https://namey.muffinlabs.com/): Used to return random names the from US Census Bureau database 
 
 <b>Images</b>
