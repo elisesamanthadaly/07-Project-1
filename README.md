@@ -17,7 +17,7 @@ WantADog is a library of doggo pictures and random names to help users find the 
 
 ## Credits
 * [Suejin](https://github.com/suejinkim20)
-* [Abner](https://github.com/suejinkim20)
+* [Abner](https://github.com/AbnerTor)
 * [Elise](https://github.com/elisesamanthadaly)
 * [Jackie](https://github.com/jaque-leen)
 
