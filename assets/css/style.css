@@ -4,8 +4,9 @@ h1 {
 }
 
 
-h2 {
+#favHeader {
     font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
 }
 
 h4 {
