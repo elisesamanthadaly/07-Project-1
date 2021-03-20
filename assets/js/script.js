@@ -66,7 +66,7 @@ $(document).ready(function() {
             .then(function(data){
                 var dogImg = $("<img>");
                 dogImg.attr("src", data[0].url);
-                dogImg.addClass("rounded-lg shadow-2xl");
+                dogImg.addClass("rounded-lg");
                 dogImg.height(450);
                 dogImageEl.append(dogImg);
 
