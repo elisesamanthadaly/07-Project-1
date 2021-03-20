@@ -21,21 +21,21 @@ Click the "Clear" button to clear previously saved favorites.
 
 ![Screencast gif of app](./assets/images/screencast.gif)
 
+
 ## Features
 
-* Refresh buttons to fetch new dog imgage or names
-* Save button to save image and name to local localStorage
-* Carousel that cycles forwards or backwards through array
+* Refresh buttons to fetch new dog images or names
+* Save button to save images and names to local storage
+* Carousel that cycles forwards or backwards through local storage array
+
 
 ## Technologies Used
 
 * HTML
 * CSS
-* Tailwind
-* JavaScript
+* [Tailwind](https://tailwindcss.com/)
+* JavaScript/jQuery
 * Google Fonts
-* The Dog API
-* Namey! API
 
 
 ## Credits
