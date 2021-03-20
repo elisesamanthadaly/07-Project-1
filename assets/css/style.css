@@ -3,11 +3,14 @@ h1 {
     color: white;
 }
 
-h2 {
+
+#favHeader {
     font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
 }
 
 h4 {
+
     color: white;
     font-family: 'Roboto Mono', monospace;
 }
