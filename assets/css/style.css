@@ -22,8 +22,8 @@ h4 {
 
 #displayImg {
     display: flex;
-    max-height: 300px;
-    max-width: 350px;
+    max-height: 400px;
+    max-width: 650px;
     height: auto;
     width: auto; 
 }
@@ -40,8 +40,8 @@ body {
 
 #currentFavImage {
     display: flex;
-    max-height: 300px;
-    max-width: 350px;
+    max-height: 400px;
+    max-width: 650px;
     height: auto;
     width: auto;
 }
