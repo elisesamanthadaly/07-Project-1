@@ -11,13 +11,14 @@ $(document).ready(function() {
 
     var capturedDogName;
     var capturedDogURL;
+    var repeatCheckName;
+    var repeatCheckURL;
     var favorite = {
         dogName: "",
         dogURL: "",
     };
     var storedFavorites;
     var favorites = [];
-
     var carouselIndex = -1;
 
     fetchName();
@@ -65,7 +66,7 @@ $(document).ready(function() {
             .then(function(data){
                 var dogImg = $("<img>");
                 dogImg.attr("src", data[0].url);
-                dogImg.addClass("rounded-lg shadow-2xl");
+                dogImg.addClass("rounded-lg");
                 dogImg.height(450);
                 dogImageEl.append(dogImg);
 
@@ -75,7 +76,7 @@ $(document).ready(function() {
     
     //Click to add current dog name/URL combo to favorites
     $("#btnSave").click(function() {
-        if ((favorite.dogName === capturedDogName) && (favorite.dogURL === capturedDogURL)) {
+        if ((repeatCheckName === capturedDogName) && (repeatCheckURL === capturedDogURL)) {
             return;
         }
 
@@ -91,6 +92,9 @@ $(document).ready(function() {
         favorites.push(favorite);
 
         localStorage.setItem("favorites", JSON.stringify(favorites));
+
+        repeatCheckName = favorites[favorites.length - 1].dogName;
+        repeatCheckURL = favorites[favorites.length - 1].dogURL;
     });
 
     //Click to clear out favorites list
@@ -101,6 +105,9 @@ $(document).ready(function() {
         carouselIndex = -1;
         $("#currentFavName").text("");
         $("#currentFavImage").attr("src", "./assets/images/spinning_doge.png");
+
+        repeatCheckName = "";
+        repeatCheckURL = "";
     });
 
     // Click to cycle backwards through favorites array
