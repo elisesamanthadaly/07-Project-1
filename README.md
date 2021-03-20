@@ -1,32 +1,24 @@
 # WantADog
 
-[WantADog](https://abnertor.github.io/WantADog/) is a library of doggo pictures and random names to help users find the best doggo-doggo name combinations.
+User Story?
+
+## Description
+[WantADog](https://abnertor.github.io/WantADog/) is a library of doggo pictures and random names to help users find the best doggo-doggo name combinations. More description here:
 
 <img src="./assets/images/spinning_doge.png" alt="Spinning doge" width="100" height="100">
 
+### Features
+* More features
+
+### Future Developments
+* Adding a "share" function so that name-doggo combinations can be downloaded and/or shared with friends and family
+* Improving Mobile UI/UX 
 
 ## Usage
+Deployed link to live site can be found at: https://abnertor.github.io/WantADog/
 
-Click the "Name" button to get a new doggo name.
-
-Click the "Doggo" button to get a new doggo image.
-
-Click the "New Combo" button to get a new combination of these.
-
-Click the "Save Current Combo" button to add the current doggo name/image combination to Favorites.
-
-Browse Favorites by clicking the "Prev" and "Next" buttons.
-
-Click the "Clear" button to clear previously saved favorites.
-
+The page has the following appearance and functionality:
 ![Screencast gif of app](./assets/images/screencast.gif)
-
-
-## Features
-
-* Refresh buttons to fetch new dog images or names
-* Save button to save images and names to local storage
-* Carousel that cycles forwards or backwards through local storage array
 
 
 ## Technologies Used
@@ -36,6 +28,7 @@ Click the "Clear" button to clear previously saved favorites.
 * [Tailwind](https://tailwindcss.com/)
 * JavaScript/jQuery
 * Google Fonts
+* Font Awesome Icons
 
 
 ## Credits
@@ -45,7 +38,7 @@ Click the "Clear" button to clear previously saved favorites.
 * [Namey!](https://namey.muffinlabs.com/): Used to return random names the from US Census Bureau database 
 
 <b>Images</b>
-* [Background doge image](https://longwallpapers.com/doge-wallpaper-high-quality/doge-wallpaper-high-quality-for-desktop-wallpaper/)
+* [Background image](https://longwallpapers.com/doge-wallpaper-high-quality/doge-wallpaper-high-quality-for-desktop-wallpaper/)
 * [Favorites doge gif](https://classical-doge.tumblr.com/)
 * [Doge favicon](https://www.favicon.cc/?action=icon&file_id=671697)
 
