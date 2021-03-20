@@ -34,6 +34,8 @@ body {
 
 #footerTag {
     font-size: 30px;
+    margin: 10px;
+    background: rgb(128,128,128, 0.25);
 }
 
 #currentFavImage {
