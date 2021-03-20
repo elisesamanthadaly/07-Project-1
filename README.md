@@ -45,7 +45,7 @@ Click the "Clear" button to clear previously saved favorites.
 * [Namey!](https://namey.muffinlabs.com/): Used to return random names the from US Census Bureau database 
 
 <b>Images</b>
-* [Background image](https://longwallpapers.com/doge-wallpaper-high-quality/doge-wallpaper-high-quality-for-desktop-wallpaper/)
+* [Background doge image](https://longwallpapers.com/doge-wallpaper-high-quality/doge-wallpaper-high-quality-for-desktop-wallpaper/)
 * [Favorites doge gif](https://classical-doge.tumblr.com/)
 * [Doge favicon](https://www.favicon.cc/?action=icon&file_id=671697)
 
