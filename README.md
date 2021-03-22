@@ -1,43 +1,58 @@
 # WantADog
 
-[WantADog](https://abnertor.github.io/WantADog/) is a library of doggo pictures and random names to help users find the best doggo-doggo name combinations.
+AS A hopeful pet owner or bored web developer<br>
+I WANT random images of dogs with random names<br>
+So I CAN make a list of possible kinds of dogs <br>
+to adopt and what to name them<br>
+OR BE entertained<br>
+
+---
+
+## Description
+[WantADog](https://abnertor.github.io/WantADog/) is a library of doggo pictures and random names to help users find the best doggo-doggo name combinations. The user can click through randomly generated names and dog images, as well as retrieve new name-dog combinations. The user can also save name-dog combinations into a favorites carousel. The application runs in the browser and features dynamically updated HTML and CSS powered by Javascript and jQuery. The favorited name-dog combinations are stored in `localStorage` and are accesible even after page refresh. Name data is retrieved by making `fetch()` calls to the [Namey! API](https://namey.muffinlabs.com/) and the dog images are retrieved from [The Dog API](https://thedogapi.com/).
 
 <img src="./assets/images/spinning_doge.png" alt="Spinning doge" width="100" height="100">
 
+### Features
+* When the page loads, a random name and dog image are displayed. The favorites carousel displays a placeholder spinning doge image.
+* When the user clicks the "Name" button a new doggo name is retrieved.
+* When the user clicks the "Doggo" button a new doggo image is retrieved.
+* When the user clicks the "New Combo" button a new combination of doggo name and doggo image are retrieved.
+* When the user clicks the "Save Current Combo" button, the current doggo name/image combination  is saved to Favorites and stored as an object in an array in `localStorage`
+* When the user clicks the "Prev" and "Next" buttons, they can click through their favorite dog/name combinations, which are stored in `localStorage`.
+* When the user clicks the "Clear" button to clear previously saved favorites, `localStorage` is cleared.
+* Saving duplicate favorites of the same dog name-image combination is prevented
+
+### Future Developments
+* Adding a "share" function so that name-doggo combinations can be downloaded and/or shared with friends and family
+* Improving Mobile UI/UX 
 
 ## Usage
+Deployed link to live site can be found at: https://abnertor.github.io/WantADog/
 
-Instructions go here.
-
+The page has the following appearance and functionality:
 ![Screencast gif of app](./assets/images/screencast.gif)
 
-## Features
-
-* Refresh buttons to fetch new dog imgage or names
-* Save button to save image and name to local localStorage
-* Carousel that cycles forwards or backwards through array
 
 ## Technologies Used
 
 * HTML
 * CSS
-* Tailwind
-* JavaScript
+* [Tailwind](https://tailwindcss.com/)
+* JavaScript/jQuery
 * Google Fonts
-* The Dog API
-* Namey! API
+* Font Awesome Icons
 
 
 ## Credits
 
 <b>APIs</b>
-* [The Dog API](https://thedogapi.com/)
-  - API key: 774092c9-0b11-4331-9432-a0aac1f1ca4a
-* [Namey!](https://namey.muffinlabs.com/)
+* [The Dog API](https://thedogapi.com/): Used to return randomized dog image URLs
+* [Namey!](https://namey.muffinlabs.com/): Used to return random names the from US Census Bureau database 
 
 <b>Images</b>
 * [Background image](https://longwallpapers.com/doge-wallpaper-high-quality/doge-wallpaper-high-quality-for-desktop-wallpaper/)
-* [Favorites doge gif](https://classical-doge.tumblr.com/)
+* [Spinning doge](https://www.pinterest.com/pin/399694535651645241/)
 * [Doge favicon](https://www.favicon.cc/?action=icon&file_id=671697)
 
 
