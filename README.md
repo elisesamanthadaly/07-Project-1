@@ -1,4 +1,3 @@
-# 07 Project 1
 # WantADog
 
 AS A hopeful pet owner or bored web developer<br>
